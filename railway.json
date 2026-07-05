@@ -1,0 +1,6 @@
+{
+  "$schema": "https://railway.com",
+  "deploy": {
+    "startCommand": "/usr/sbin/sshd -D -p $PORT"
+  }
+}
