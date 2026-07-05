@@ -8,7 +8,7 @@ RUN mkdir /var/run/sshd
 
 # Tambahkan user baru (Ganti 'ubuntuuser' dan 'PasswordDisini' sesuai keinginan)
 RUN useradd -rm -d /home/ubuntuuser -s /bin/bash -g root -G sudo -u 1000 ubuntuuser
-RUN echo 'ubuntuuser:PasswordDisini' | chpasswd
+RUN echo 'fmc:fmc' | chpasswd
 
 # Izinkan login SSH via password
 RUN sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /stop/etc/ssh/sshd_config
